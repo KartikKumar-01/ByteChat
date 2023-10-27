@@ -1,0 +1,103 @@
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px
+}
+
+body{
+    background-color: #25274D;
+}
+
+.img-container{
+    display: flex;
+    width:500px
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    max-width: 350px;
+    background-color: #374785;
+    border: 1px solid #2E9CCA;
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+
+
+.phone, .password{
+    padding-bottom: 10px;
+}
+
+.details{
+    padding: 30px;
+}
+
+.login-container>.btn{
+    display: flex;
+    max-width: 100%;
+    gap: 10px;
+    border-top: 1px solid #2E9CCA;
+    padding: 30px 15px;
+}
+
+.login{
+    max-width: 350px; 
+}
+
+.signup{
+    width: 95px;                
+    height: 33px;
+    padding:0;
+    margin: 0;
+}
+
+input{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #2E9CCA;
+    background-color: #CAFAFE;
+}
+
+button{
+    border-radius: 100px;
+    background-color: #0095F6;
+    border:0;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.guest{
+    border-radius: 10px;
+    background-color: #42B72A;
+}
+
+p{
+    font-family: 'Lora', serif;
+    font-size: smaller;
+}
+
+h1{
+    font-family:'Poltawski Nowy', serif;
+    font-size: 40px;
+    color: white;
+}
+
+input{
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.forget-pass>a{
+    color:white;
+}

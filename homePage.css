@@ -1,0 +1,184 @@
+body{
+  background-color: #25274D;
+}
+
+.container{
+  display: flex;
+  gap: 5px;
+}
+
+.navbar{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    top:0%;
+    width: 300px;
+    height: 100%;
+    background-color: #374785;
+    border: 1.5px solid #2E9CCA;
+    border-radius: 5px;
+}
+
+.sidebar{
+    border-bottom: 1px solid #2E9CCA;
+    margin: 0 10px;
+    padding: 0 10px 0 0 ;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+ul.nav{
+    padding:0px 0px 0px 10px
+}
+
+p{
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+img{
+    height: 25px;
+    width: 25px;
+}
+
+.profile{
+    margin-top: 165px;
+    padding: 20px 0 10px 10px;
+}
+
+.log-out{
+    border-top: 1px solid #2E9CCA;
+    padding: 10px;
+    margin:0 10px;
+    margin-top: 7px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2E9CCA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #374785}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  h1{
+    font-family:'Poltawski Nowy', serif;
+    font-size: 40px;
+    color: white;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+button.log-out{
+  background-color: #D0312D;
+  width: 150px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  border: 0;
+  border-radius: 100px;
+  justify-content: space-around;
+}
+
+
+.content{
+  border: 1.5px solid #2E9CCA;
+  border-radius: 5px;
+  font-size: 12px;
+  min-width: 520px;
+}
+
+.profile-row-1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.profile-box{
+  background-color: #29648A;
+  width: 230px;
+  height: 280px;
+  border: 1px solid #2E9CCA;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.profile-photo{
+  border-radius: 50%;
+  width: 35px;
+  height: 30px;
+  margin: 0 4px;
+}
+
+p.profile-para{
+  border-bottom: 1px solid #2E9CCA;
+  padding-bottom: 2px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+img.home-post{
+  width: 220px;
+  height: 220px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+input[type="search"]{
+  border-radius: 5px;
+    border: 1px solid #2E9CCA;
+  background-color: #CAFAFE;
+  height: 30px;
+}
+
+button.log-out:hover{
+  cursor: pointer;
+}
