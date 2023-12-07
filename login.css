@@ -3,16 +3,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5px
+    gap: 5px;
 }
 
 body{
     background-color: #25274D;
+    margin: 50px;
 }
 
 .img-container{
     display: flex;
-    width:500px
+    width:600px;
+    padding: 0;
 }
 
 .login-container{

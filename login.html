@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./login.css">
 </head>
-<body>
+<body onload="onLoad()">
     <div class="container">
 
     <div class="img-container">
-       <img src="./assets/Photos/Theme.png" style="height: 350px; width: 600px;">
+       <img src="./assets/Photos/ByteChat.jpg" style="height: 350px; width: 600px;">
     </div>
     <div class="login-container">
         <h1 class="login">ByteChat</h1>
@@ -27,8 +27,9 @@
         <div class="forget-pass login"><a href=""><p>Forget Password?</p></a></div>
         <div class="btn">
         <div class="signup login"><a href="./signup.html"><button type="button">Sign Up</button></a></div>
-        <div class="guest login"><a href="./homePage.html"><button type="button" class="guest">Continue as guest!</button></a></div>
+        <div class="guest login"><a href="./homePage.html"><button type="button" class="guest" onclick="onClick()">Continue as guest!</button></a></div>
     </div>
     </div>
+    <script src="./login.js"></script>
 </body>
 </html>

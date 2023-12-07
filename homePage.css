@@ -52,7 +52,7 @@ img{
 }
 
 .profile{
-    margin-top: 165px;
+    margin-top: 195px;
     padding: 20px 0 10px 10px;
 }
 
@@ -181,4 +181,21 @@ input[type="search"]{
 
 button.log-out:hover{
   cursor: pointer;
+}
+
+a.profile-page{
+  color: white;
+}
+
+img.cover{
+  object-fit: cover;
+}
+
+#flexbox{
+  display: flex;
+  gap: 5px
+}
+
+#flexbox:hover{
+  cursor: default;
 }

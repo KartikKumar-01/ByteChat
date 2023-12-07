@@ -1,128 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital@1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./homePage.css">
-</head>
-<body>
-    <div class="container">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./homePage.css" />
+  </head>
 
+
+
+
+
+
+  <body  onload="onClick()">
+    <div class="container">
       <!-- Coding for Navigation Bar -->
-        <div class="navbar">
-          <div class="sidebar">
-              <a href="./homePage.html" class="heading">
-                <h1>ByteChat</h1>
-              </a>
-          </div>
-       
-        <ul class="nav">
-            <li class="nav-item">
-              <a href="./homePage.html" class="home" aria-current="page">
-                <p id="home"><img class="home" src="./assets/Icons/Home.png"> <strong>Home</strong></p>
-              </a>
-            </li>
-            <li>
-              <p id="search"><img class="search" src="./assets/Icons/Search.png"><input type="search" class="form-control" placeholder="Search..." aria-label="Search"></p>
-            </li>
-            <div class="dropdown">
-                <p class="category"><img src="./assets/Icons/Category.png"> Category <img src="./assets/Icons/Dropdown Arrow.png" style="height: 20px; width:20px"></p>
-                <div class="dropdown-content">
-                <a href="#">Hollywood</a>
-                <a href="#">Bollywood</a>
-                <a href="#">Youtubers</a>
-                <a href="#">Singers</a>
-                <a href="#">Artists</a>
-              </div>
-            </div>
-          </ul>
-          <a href="#" class="profile">
-            <p><img src="./assets/Icons/Profile Img.png"> Profile Name</p>
-        </a>
-          <a href="./login.html" class="log-out d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <button class="log-out"><img class="logout" src="./assets/Icons/logout_FILL0_wght400_GRAD0_opsz24.png"> Log Out</button>
+      <div class="navbar">
+        <div class="sidebar">
+          <a href="./homePage.html" class="heading">
+            <h1>ByteChat</h1>
           </a>
         </div>
 
-        
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="./homePage.html" class="home" aria-current="page">
+              <p id="home">
+                <img class="home" src="./assets/Icons/Home.png" />
+                <strong>Home</strong>
+              </p>
+            </a>
+          </li>
+          <!-- <li>
+            <p id="search">
+              <img class="search" src="./assets/Icons/Search.png" /><input
+                type="search"
+                class="form-control"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </p>
+          </li> -->
+          <div class="dropdown">
+            <p class="category">
+              <img src="./assets/Icons/Category.png" /> Category
+              <img
+                src="./assets/Icons/Dropdown Arrow.png"
+                style="height: 20px; width: 20px"
+              />
+            </p>
+            <div class="dropdown-content">
+              <a href="#">Hollywood</a>
+              <a href="#">Bollywood</a>
+              <a href="#">Youtubers</a>
+              <a href="#">Singers</a>
+              <a href="#">Artists</a>
+            </div>
+          </div>
+        </ul>
+        <a href="#" class="profile" >
+          <div id="flexbox"><img src="./assets/Icons/Profile Img.png" /><p id="profile-name">Profile Name</p></div>
+        </a>
+        <a
+          href="./login.html"
+          class="log-out d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <button class="log-out">
+            <img
+              class="logout"
+              src="./assets/Icons/logout_FILL0_wght400_GRAD0_opsz24.png"
+            />
+            Log Out
+          </button>
+        </a>
+      </div>
 
       <!-- Coding for content of the page. -->
       <div class="content">
         <div class="profile-row-1">
           <div class="profile-1 profile-box">
-            <p id="profile-1" class="profile-para"><img src="./assets/Photos/Virat Kohli/Virat Kohli(1).jpg" alt="" class="profile-photo"> Virat Kohli</p>
-            <img class="home-post" src="./assets/Photos/Virat Kohli/Virat Kohli(2).png">
+            <p id="profile-1" class="profile-para">
+              <a class="profile-page" href="./ViratKohli.html"
+                ><img
+                  src="./assets/Photos/Virat Kohli/Virat Kohli(1).jpg"
+                  alt=""
+                  class="profile-photo"
+                />
+                Virat Kohli</a
+              >
+            </p>
+            <img
+              class="home-post"
+              src="./assets/Photos/Virat Kohli/Virat Kohli(2).png"
+            />
           </div>
           <div class="profile-2 profile-box">
-            <p id="profile-2" class="profile-para"><img src="./assets/Photos/Arijit Singh/Profile Img.jpeg" alt="Arijit Singh" class="profile-photo"> Arijit Singh</p>
-            <img class="home-post" src="./assets/Photos/Arijit Singh/1.png">
+            <p id="profile-2" class="profile-para">
+              <a class="profile-page" href="./ArijitSingh.html">
+              <img
+                src="./assets/Photos/Arijit Singh/Profile Img.jpeg"
+                alt="Arijit Singh"
+                class="profile-photo"
+              />
+              Arijit Singh</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Arijit Singh/1.png" />
           </div>
           <div class="profile-3 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Carry Minati/Profile Img.jpeg" alt="Carry Minati" class="profile-photo"> Carry Minati</p>
-            <img class="home-post" src="./assets/Photos/Carry Minati/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./carryMinati.html" class="profile-page"><img
+                src="./assets/Photos/Carry Minati/Profile Img.jpeg"
+                alt="Carry Minati"
+                class="profile-photo"
+              />
+              Carry Minati</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Carry Minati/1.png" />
           </div>
           <div class="profile-4 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Kartik Aaryan/Profile Img.jpg" alt="Kartik Aaryan" class="profile-photo"> Kartik Aaryan</p>
-            <img class="home-post" src="./assets/Photos/Kartik Aaryan/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./kartikAryan.html" class="profile-page"><img
+                src="./assets/Photos/Kartik Aaryan/Profile Img.jpg"
+                alt="Kartik Aaryan"
+                class="profile-photo"
+              />
+              Kartik Aaryan</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Kartik Aaryan/1.png" />
           </div>
           <div class="profile-5 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Parmish Verma/Profile Img.jpg" alt="Parmish Verma" class="profile-photo"> Parmish Verma</p>
-            <img class="home-post" src="./assets/Photos/Parmish Verma/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./parmishVerma.html" class="profile-page"><img
+                src="./assets/Photos/Parmish Verma/Profile Img.jpg"
+                alt="Parmish Verma"
+                class="profile-photo"
+              />
+              Parmish Verma</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Parmish Verma/1.png" />
           </div>
           <div class="profile-6 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Bhuvan Baam/Screenshot 2023-10-26 223845.png" alt="Bhuvan Baam" class="profile-photo"> Bhuvan Baam</p>
-            <img class="home-post" src="./assets/Photos/Bhuvan Baam/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./bhuvanBam.html" class="profile-page"><img
+                src="./assets/Photos/Bhuvan Baam/Screenshot 2023-10-26 223845.png"
+                alt="Bhuvan Baam"
+                class="profile-photo"
+              />
+              Bhuvan Bam</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Bhuvan Baam/1.png" />
           </div>
           <div class="profile-7 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Rohit Sharma/Profile Img.png" alt="Rohit Sharma" class="profile-photo"> Rohit Sharma</p>
-            <img class="home-post" src="./assets/Photos/Rohit Sharma/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./rohitSharma.html" class="profile-page"><img
+                src="./assets/Photos/Rohit Sharma/Profile Img.png"
+                alt="Rohit Sharma"
+                class="profile-photo"
+              />
+              Rohit Sharma</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Rohit Sharma/1.png" />
           </div>
           <div class="profile-8 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Akshay Kumar/Profile Img.jpg-org" alt="Akshay Kumar" class="profile-photo"> Akshay Kumar</p>
-            <img class="home-post" src="./assets/Photos/Akshay Kumar/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./akshayKumar.html" class="profile-page"><img
+                src="./assets/Photos/Akshay Kumar/Profile Img.jpg-org"
+                alt="Akshay Kumar"
+                class="profile-photo"
+              />
+              Akshay Kumar</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Akshay Kumar/1.png" />
           </div>
           <div class="profile-9 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Kiara Advani/Profile Img.png" alt="" class="profile-photo"> Kiara Advani</p>
-            <img class="home-post" src="./assets/Photos/Kiara Advani/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./kiaraAdvani.html" class="profile-page"><img
+                src="./assets/Photos/Kiara Advani/Profile Img.png"
+                alt=""
+                class="profile-photo"
+              />
+              Kiara Advani</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Kiara Advani/1.png" />
           </div>
           <div class="profile-10 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Ashish/Profile Img.jpg" alt="Ashish Chanchlani" class="profile-photo"> Ashish Chanchlani</p>
-            <img class="home-post" src="./assets/Photos/Ashish/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./ashishChanchalani.html" class="profile-page"><img
+                src="./assets/Photos/Ashish/Profile Img.jpg"
+                alt="Ashish Chanchlani"
+                class="profile-photo"
+              />
+              Ashish Chanchlani</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Ashish/1.png" />
           </div>
           <div class="profile-11 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/Karan Aujla/Profile Img.jpg" alt="Karan Aujla" class="profile-photo"> Karan Aujla</p>
-            <img class="home-post" src="./assets/Photos/Karan Aujla/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./karanAujla.html" class="profile-page"><img
+                src="./assets/Photos/Karan Aujla/Profile Img.jpg"
+                alt="Karan Aujla"
+                class="profile-photo"
+              />
+              Karan Aujla</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Karan Aujla/1.png" />
           </div>
           <div class="profile-12 profile-box">
-            <p id="profile-3" class="profile-para"><img src="./assets/Photos/MS Dhoni/Profile Img.jpg" alt="MS Dhoni" class="profile-photo"> Mahendra Singh Dhoni</p>
-            <img class="home-post" src="./assets/Photos/MS Dhoni/1.png">
+            <p id="profile-3" class="profile-para">
+              <a href="./msd.html" class="profile-page"><img
+                src="./assets/Photos/MS Dhoni/Profile Img.jpg"
+                alt="MS Dhoni"
+                class="profile-photo"
+              />
+              Mahendra Singh Dhoni</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/MS Dhoni/1.png" />
           </div>
           <div class="profile-13 profile-box">
-            <p id="profile-3" class="profile-para"><img src="" alt="" class="profile-photo"> Profile Name</p>
+            <p id="profile-3" class="profile-para">
+              <a href="./shreyaGhoshal.html" class="profile-page"><img
+                src="./assets/Photos/Shreya Ghoshal/Profile Img.png"
+                alt="Shreya Ghoshal"
+                class="profile-photo"
+              />
+              Shreya Ghoshal</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Shreya Ghoshal/1.png" />
           </div>
           <div class="profile-14 profile-box">
-            <p id="profile-3" class="profile-para"><img src="" alt="" class="profile-photo"> Profile Name</p>
+            <p id="profile-3" class="profile-para">
+              <a href="./klRahul.html" class="profile-page"><img
+                src="./assets/Photos/KL Rahul/Profile Img.png"
+                alt="KL Rahul"
+                class="profile-photo"
+              />
+              KL Rahul</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/KL Rahul/1.png" />
           </div>
           <div class="profile-15 profile-box">
-            <p id="profile-3" class="profile-para"><img src="" alt="" class="profile-photo"> Profile Name</p>
+            <p id="profile-3" class="profile-para">
+              <a href="./deArmas.html" class="profile-page"><img
+                src="./assets/Photos/Ana de Armas/Profile Img.jpg"
+                alt="Ana de Armas"
+                class="profile-photo"
+              />
+              Ana de Armas</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Ana de Armas/1.png" />
           </div>
           <div class="profile-16 profile-box">
-            <p id="profile-3" class="profile-para"><img src="" alt="" class="profile-photo"> Profile Name</p>
+            <p id="profile-3" class="profile-para">
+              <a href="./elvishYadav.html" class="profile-page"><img
+                src="./assets/Photos/Elvish Yadav/Profile Img.png"
+                alt="Elvish Yadav"
+                class="profile-photo"
+              />
+              Elvish Yadav</a>
+            </p>
+            <img class="home-post" src="./assets/Photos/Elvish Yadav/1.png" />
           </div>
         </div>
       </div>
     </div>
-</body>
+    <script src="./login.js"></script>
+    <script src="./homePage.js"></script>
+  </body>
 </html>
